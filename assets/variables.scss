@@ -1,0 +1,73 @@
+/* Define standard variables and values for website */
+
+// Background-Color
+$primary-color: #1b1f3b;
+$secondary-color: #2d325a;
+$tertiary-color: #242849;
+$fourth-color: #282c51;
+$active-color: #00b4ff;
+
+// Overwrite Vuetify Default
+$navigation-drawer-border-width: none;
+
+// Poppins Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.bg-color {
+  background-color: $primary-color;
+}
+
+.custom-placeholer-color input::placeholder {
+  color: #ffffff !important;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  opacity: 1;
+}
+
+.custom-pagination .v-pagination {
+  .v-pagination__item {
+    margin: 0 8px;
+    box-shadow: none;
+    background-color: $primary-color;
+  }
+
+  .v-pagination__item--active {
+    font-weight: 900;
+    background-color: #27bbe075 !important;
+    color: $active-color;
+  }
+
+  .v-pagination__navigation {
+    box-shadow: none;
+    background-color: $fourth-color;
+  }
+
+  .v-pagination__navigation--disabled {
+    visibility: hidden;
+  }
+}
+
+.v-list {
+  .v-list-item--link:before {
+    background-color: transparent !important;
+  }
+
+  .v-list-item--active {
+    background-color: $tertiary-color !important;
+    color: transparent !important;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: $active-color;
+
+    .icons {
+      filter: invert(50%) sepia(70%) saturate(2833%) hue-rotate(169deg)
+        brightness(106%) contrast(105%);
+    }
+
+    .v-list-item__content .v-list-item__title {
+      font-weight: bold !important;
+      color: $active-color;
+    }
+  }
+}
