@@ -34,7 +34,7 @@
         </v-list-item-icon>
 
         <v-list-item-content class="ml-n5 pa-0">
-          <v-list-item-title class="text-body-1 font-weight-thin">{{
+          <v-list-item-title class="text-body-1 font-weight-light">{{
             nav.title
           }}</v-list-item-title>
         </v-list-item-content>

@@ -26,19 +26,19 @@
 
       <v-row class="px-12">
         <v-col class="d-flex align-center py-0">
-          <h1 class="text-h6 font-weight-thin ml-3">200 Records</h1>
+          <h1 class="text-h6 font-weight-light ml-3">200 Records</h1>
         </v-col>
 
         <v-col class="d-flex justify-end align-center py-0">
           <v-col>
-            <v-btn class="text-h6 font-weight-thin text-capitalize" text>
+            <v-btn class="text-h6 font-weight-light text-capitalize" text>
               <img class="mr-3" src="~/static/sort-za-icon.svg" alt="..." />
               Sort</v-btn
             >
           </v-col>
 
           <v-col>
-            <v-btn class="text-h6 font-weight-thin text-capitalize" text>
+            <v-btn class="text-h6 font-weight-light text-capitalize" text>
               <img class="mr-3" src="~/static/export-icon.svg" alt="..." />
               Export<span class="text-lowercase mx-1">to</span>Excel</v-btn
             >
@@ -107,7 +107,7 @@
       >
         <v-row class="d-flex align-self-center py-2">
           <v-col class="d-flex justify-center align-center">
-            <h1 class="text-h6 font-weight-thin">{{ tableContent.no }}</h1>
+            <h1 class="text-h6 font-weight-light">{{ tableContent.no }}</h1>
           </v-col>
           <v-col class="d-flex justify-center align-center">
             <v-avatar size="40" class="ml-3">
@@ -115,28 +115,28 @@
             </v-avatar>
           </v-col>
           <v-col class="d-flex justify-center align-center">
-            <h1 class="text-h6 font-weight-thin">
+            <h1 class="text-h6 font-weight-light">
               {{ tableContent.fullName }}
             </h1>
           </v-col>
           <v-col class="d-flex justify-center align-center">
-            <h1 class="text-h6 font-weight-thin">
+            <h1 class="text-h6 font-weight-light">
               {{ tableContent.email }}
             </h1>
           </v-col>
           <v-col class="d-flex justify-center align-center">
-            <h1 class="text-h6 font-weight-thin">
+            <h1 class="text-h6 font-weight-light">
               {{ tableContent.country }}
             </h1>
           </v-col>
           <v-col class="d-flex justify-center align-center">
-            <h1 class="text-h6 font-weight-thin">
+            <h1 class="text-h6 font-weight-light">
               {{ tableContent.highScore }}
             </h1>
           </v-col>
         </v-row>
 
-        <v-row class="ml-15">
+        <v-row class="ml-15 mr-0">
           <v-divider
             v-show="index < 5"
             class="ml-10"
@@ -150,7 +150,7 @@
         <v-row>
           <v-col class="ml-15 pl-13">
             <v-btn
-              class="text-subtitle-1 font-weight-thin text-capitalize"
+              class="text-subtitle-1 font-weight-light text-capitalize"
               color="#1b1f3b"
               large
               depressed
@@ -163,7 +163,7 @@
 
           <v-col class="d-flex justify-end mr-13">
             <v-pagination
-              class="custom-pagination text-subtitle-1 font-weight-thin"
+              class="custom-pagination text-subtitle-1 font-weight-light"
               v-model="page"
               :length="4"
             ></v-pagination>
